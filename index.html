@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang=zh-cn>
+<head>
+  <meta charset=utf-8>
+  <meta http-equiv=x-dns-prefetch-control content=on>
+  <link rel=dns-prefetch href="https://stackpath.bootstrapcdn.com/">
+  <link rel=dns-prefetch href="https://cdn.jsdelivr.net/">
+  <link rel=dns-prefetch href="https://code.jquery.com/">
+  
+  <title>标题 - 宣传语</title>
+  <meta name="keywords" content="关键词,关键词,关键词">
+  <meta name="description" content="站点描述">
+  <meta name="version" content="revision20200202">
+  <meta name="copyright" content="作者">
+  <meta name="author" content="Kamas Lau<kamaslau@dingtalk.com>"><!-- 作者及联系方式 -->
+  <meta name="version" content="alpha-0.0.1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Stylesheets -->
+  <!--<link rel="stylesheet" href="">-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  
+  <!-- Inline Styles -->
+  <!--<style></style>-->
+  
+  <!-- Icons -->
+  <!--<link rel="apple-touch-icon" href="">-->
+  <!--<link rel="shortcut icon" href="">-->
+</head>
+
+<body id="app">
+<!-- 页首 -->
+<header id="header" class="text-center">
+  <div class="container">
+    <h1><a title="标题 - 宣传语" href="#">标题</a></h1>
+  
+    <nav id="nav-header">
+      <ul class="list-unstyled">
+        <li><a href="#header">首页</a></li>
+        <li><a href="#main">主体</a></li>
+        <li><a href="#contact">联系方式</a></li>
+      </ul>
+    </nav>
+  </div>
+</header><!-- end #header -->
+
+<!-- 主体部分 -->
+<main id="main" role="main">
+  <div id="content">
+    <div class="container">
+      <h2>Medias</h2>
+  
+      <section>
+        <header>
+          <h3>Image</h3>
+        </header>
+        
+        <figure>
+          <img class="img-fluid" alt="图片标题" src="">
+          <figcaption>图片说明</figcaption>
+        </figure>
+      </section>
+    </div>
+    
+    <div class="container">
+      <h2>Lists</h2>
+  
+      <ul class="row">
+        <li class="col-6"><i class="fal fa-check"></i> 列表项</li>
+      </ul>
+  
+      <dl class="row">
+        <dt class="col-3">定义</dt>
+        <dd class="col-9">说明</dd>
+      </dl>
+    </div>
+  
+    <div class="container">
+      <h2>Tables</h2>
+
+      <table class="table table-striped table-hover text-center">
+        <thead class="thead-light">
+          <tr>
+            <th>&nbsp;</th><th scope="col">列1</th><th scope="col">列2</th><th scope="col">列3</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>行1</td><td>aaa</td><td>aaa</td><td>aaa</td>
+          </tr>
+          <tr>
+            <td>行2</td><td>bbb</td><td>bbb</td><td>bbb</td>
+          </tr>
+        </tbody>
+
+        <tfoot>
+          <tr>
+            <td>&nbsp;</td>
+            <td>a</td>
+            <td>b</td>
+            <td>c</td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+  
+  </div><!-- end #content -->
+</main><!-- end #main -->
+
+<footer id="footer">
+  <div class="container">
+    <p id="copyright">&copy;2020 标题</p>
+    
+    <div id="contact">
+      <ul>
+        <li>EMAIL <a href="mailto:name@example.com">name@example.com</a></li>
+        <li>SMS <a href="sms:+86.532.88668866">+86.532.88668866</a></li>
+        <li>TEL <a href="tel:+86.532.88668866">+86.532.88668866</a></li>
+      </ul>
+    </div>
+  </div>
+</footer><!-- end #footer -->
+
+
+<!-- JavaScript -->
+<!--<script async src=""></script>-->
+<!--<script defer src=""></script>-->
+<script defer>
+  // Vanilla JavaScript
+  window.onload = () => {
+    // UserAgent
+    const user_agent = navigator.userAgent
+    console.log('UserAgent', user_agent)
+  }
+</script>
+
+<!-- Vue -->
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<script defer>
+  // Vue.js
+  const app = new Vue({
+    el: '#app',
+    data: {
+      message: 'Hello Vue!'
+    },
+    created() {
+      console.log('Vue Loaded!')
+    }
+  })
+</script>
+
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script defer>
+  // jQuery
+  $(function(){
+    console.log('jQuery Loaded!')
+  })
+</script>
+
+<!-- end JavaScripts -->
+
+</body>
+</html>
